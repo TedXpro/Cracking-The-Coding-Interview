@@ -27,4 +27,9 @@ int main(){
     b = 120;
     numberSwapper(a, b);
     cout << a << " " << b << endl;
+
+    a = -120;
+    b = -120009;
+    numberSwapper(a, b);
+    cout << a << " " << b << endl;
 }
