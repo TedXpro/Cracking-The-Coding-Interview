@@ -1,10 +1,17 @@
 #include <iostream>
 #include <unordered_map>
+#include <cmath>
 
 using namespace std;
 
 int factorialZeros(int n){
-    return n / 5;
+    int count = 0;
+    int i = 1;
+    while(n >= pow(5, i)){
+        count += n / pow(5, i);
+        i++;
+    }
+    return count;
 }
 
 int main(){
